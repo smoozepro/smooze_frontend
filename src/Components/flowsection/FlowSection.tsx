@@ -88,14 +88,14 @@ const FlowSection = () => {
       bottomtext:
         'Select multiple genres and moods to create the perfect soundtrack',
       para: 'Create your own perfect soundtrack',
-      img: '/src/assets/flowsection/Flowcover2.png',
+      img: img2,
       description: 'Create Soundtrack',
       children: <AddIcon onClick={() => AddFlow('new')} />
     },
     {
       bottomtext: 'Select multiple artists to create the perfect sountrack',
       para: 'View all your custom songs',
-       img: '/src/assets/flowsection/Flowcover3.png',
+       img: img3,
       description:
         flowsongs.length > 0
           ? `${flowsongs.length} Custom Songs`
