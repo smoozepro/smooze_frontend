@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.aboutContainer{
+  color:#fff;
+  padding-top: 5%;
+}
+
+
+
+.aboutContent{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h3{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.aboutmusic{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:3% 0%
+}
+
+
+
+.musicContainer,
+.artistContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 1%;
+  width: 100%;
+}
+
+.artistContainer{
+  padding-bottom: 15%;
+}
+
+.music {
+   display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: space-evenly;
+  margin-right: 3%;
+}
+
+.musicImg {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.musicImg img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.artistImg img {
+  padding: 12px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+}
+
+.musicInfoDescription {
+  letter-spacing: 0.09px;
+  color: #99999f;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 0.65rem;
+  transition: all 0.5s ease-in-out;
+}
+.musicInfoDescription:hover {
+  color: rgb(210, 208, 208);
+  cursor: pointer;
+}
+.musicInfoHeader {
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.iconLike {
+  color: #99999f;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+.iconLike:hover {
+  color: rgb(210, 208, 208);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.iconAndDesc {
+  display: flex;
+
+  align-items: center;
+  margin-top: 0.2rem;
+  column-gap: 0.4rem;
+  transition: all 0.5s;
+}
+
+.artistInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .artisteLink{
+    margin-right: 3%;
+  }
+
+
+
+@media screen and (max-width: 1280px) {
+  .musicContainer,
+  .artistContainer {
+    column-gap: 8%;
+    padding-bottom: 10%;
+    overflow-y: scroll;
+  }
+
+  .artistContainer{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .music{
+    margin-right: 3%;
+  }
+
+  .artisteLink{
+    margin-right: 5%;
+  }
+
+
+}
+
+@media screen and (max-width: 780px) {
+  .musicContainer {
+    column-gap: 8% ;
+  }
+
+  .artistContainer{
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 0%;
+  }
+
+  .artistContainer{
+    padding-bottom: 20%;
+  }
+  .artistImg img{
+    width:8rem;
+    height:8rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .musicContainer{
+    column-gap: 8%;
+  }
+
+
+  .artistContainer{
+    padding-bottom: 72%;
+  }
+}

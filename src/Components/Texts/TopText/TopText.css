@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+.top-text {
+  color: white;
+  font: normal normal bold 15px/20px Lato;
+  display: inline-block;
+  margin: 0 35px 0 0;
+  font-size: 12px;
+}
+
+.top-text-right div {
+  color: #99999f;
+  font: normal normal bold 15px/20px Lato;
+  display: inline-block;
+
+  margin: 0 0 0 150px;
+  /* margin-right: 300px */
+}
+
+@media screen and (max-width: 1024px) {
+  /* .top-text{
+    font-size: 12px;
+  } */
+}
+
+@media screen and (max-width: 769px) {
+  .top-text {
+    font-size: 12px;
+    margin: 0 12px 0 0;
+  }
+}

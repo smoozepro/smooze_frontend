@@ -1,0 +1,72 @@
+
+name: CI/CD
+
+on:
+  push:
+    branches: [ staging ]
+  pull_request:
+    branches: [ staging ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install dependencies
+      run: yarn install
+
+
+    - name: Build project
+      run: yarn build
+    - name: Upload production-ready build files
+      uses: actions/upload-artifact@v3
+      with:
+        name: production-files
+        path: ./dist
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.SMOVEE_SECRET_TOKEN }}
+          publish_dir: ./dist
+
+          
+    # - name: Run the tests and generate coverage report
+    #   run: yarn test -- --coverage
+
+    # - name: Upload coverage to Codecov
+    #   uses: codecov/codecov-action@v1
+
+    # - name: Build
+    #   run: yarn build
+
+         
+    # - name: Build & push Docker image
+    #   uses: mr-smithers-excellent/docker-build-push@v5
+    #   with:
+    #     image: udokachi/live-project-front-end-image
+    #     tags: latest
+    #     registry: docker.io
+    #     dockerfile: Dockerfile
+    #     username: ${{ secrets.DOCKER_USERNAME }}
+    #     password: ${{ secrets.DOCKER_PASSWORD }}
+

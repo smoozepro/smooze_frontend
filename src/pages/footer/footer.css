@@ -1,0 +1,161 @@
+.footer_main {
+  background-color: #16161a;
+  margin-top: 0%;
+  /* font-size: 16px; */
+}
+
+.footer-help {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 20%;
+}
+
+.footer-title {
+  color: rgb(99, 96, 96);
+  font-weight: bold;
+  padding-bottom: 10%;
+  /* padding-left: 25%; */
+  font-size: 16px;
+}
+/* .footer-title.smooze {
+  margin-left: 15px;
+} */
+.footer-title.communities {
+  margin-left: 8px;
+}
+
+.footer-link {
+  color: rgb(99, 96, 96);
+  line-height: 1cm;
+  font-size: 14px;
+}
+
+.footer-social {
+  margin-top: -1.4%;
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  padding: 0%;
+}
+
+.footer-social li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(112, 111, 111);
+  height: 30px;
+  width: 30px;
+}
+
+.facebook-social {
+  height: 20px;
+  color: rgb(251, 245, 245);
+  border-radius: 50%;
+}
+
+.twitter-social
+.footer-social a{
+  color: rgb(249, 246, 246);
+  justify-content: space-between;
+  height: 20px;
+  border-radius: 50%;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.instagram-social {
+  display: flex;
+  color: rgb(241, 237, 237);
+  height: 20px;
+  justify-content: space-between;
+  border-radius: 50%;
+}
+
+.musicbox_premium button {
+  color: #fff;
+  font-size: 11px;
+  padding: 1%;
+}
+
+.last-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem 2rem;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.footer-bottom a {
+  color: #848484;
+  font-size: 0.8rem;
+  /* padding-left: 0.6rem; */
+  letter-spacing: 0.07px;
+  opacity: 0.8;
+}
+.footer-social ul {
+  display: flex;
+}
+.facebook-social ul li {
+  background-color: #848484;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.facebook-social .icon-fo {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-en select {
+  border: none;
+  padding: 0.5rem;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+.footer-en {
+  margin-bottom: 1rem;
+}
+.footer-input .music {
+  color: #848484;
+  opacity: 1;
+  font-size: 0.8rem;
+}
+
+.footer-input {
+  border-color: blue;
+  width: 15%;
+  padding: 10px;
+  border-style: none;
+  display: flex;
+}
+
+@media screen and (max-width: 780px) {
+  .footer-help {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .find img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --max-width: 1120px;
+  --fixed-width: 500px;
+  --fluid-width: 90vw;
+}
+.container {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: transparent;
+  margin-bottom: 2%;
+}
+
+.detailContainer {
+  margin-left: 8%;
+}
+
+.header {
+  margin-bottom: 0;
+  padding: 0;
+  color: #ffffff;
+  font: normal normal bold 20px/48px Lato;
+  letter-spacing: 0.24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* left: 137px; */
+}
+
+.musicContainer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: auto;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: space-evenly;
+}
+.musicImg {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.musicImg img {
+  width: 10rem;
+  height: 10rem;
+}
+.browseMain {
+  display: contents;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../components/BrowseDetails/asset/BG.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Browseviewall {
+  margin-bottom: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 0.8rem;
+  width: 2%;
+  letter-spacing: 0.24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activeLoad {
+  color: #ffffff !important;
+
+  opacity: 0.2 !important;
+}
+span {
+  color: #fff;
+}
+
+.browseDetailsLinkContainer {
+  display: flex;
+  padding: 2% 8%;
+  margin-bottom: 1rem;
+  background: var(--unnamed-color-161a1a) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.backdrop {
+  display: flex;
+  position: sticky;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin: 0px auto;
+  top: 65px;
+  background: var(--unnamed-color-161a1a) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  z-index: 2000;
+  width: 100vw;
+}
+.BrowseDetailNav {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  align-content: center;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.BrowseDetailLink {
+  color: #ffffff;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.BrowseDetailLink:hover {
+  color: #2dceef;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.browseDetailsTitle {
+  letter-spacing: 0.26px;
+  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+  font: normal normal 900 37px/25px Lato;
+  letter-spacing: 0.24px;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.twitter-social {
+  border-radius: 0;
+}
+
+.BrowseDetailLink > .active {
+  border-bottom: 2px solid#2DCEEF;
+  border-bottom-width: 2px;
+}
+
+.bgImage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  margin: 0px auto;
+  background-repeat: no-repeat;
+}
+
+.flowModalContainer {
+  color: #3893a5;
+  margin: 0 auto;
+  background-color: #161a1a45;
+  opacity: 1;
+  -wwebkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0px;
+}
+
+.FlowCloseIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1px;
+  width: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.flowModalLacbel {
+  width: 300px;
+  display: block;
+  margin: 10px auto;
+  padding: 0 0px;
+  align-content: center;
+  background-color: transparent;
+  margin: 20px auto;
+  /* border-color: #08596a30; */
+  /* color: #08596a30; */
+}
+
+.flowModalInput {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  border-color: #f2f5f653;
+  font: 500 1rem/1.5rem Lato !important;
+  color: #f2f5f653;
+  margin: 2px auto;
+}
+.flowModalInpu_filet {
+  margin: 2px auto;
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 13px;
+  background-color: transparent;
+  margin-top: 7px;
+  color: #f2f5f653;
+  border-color: #f2f5f653;
+}
+.flowSubmit {
+  margin: 0 auto;
+  width: 100%;
+  /* padding: 0 13px; */
+  background-color: #3893a5;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 35px;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+}
+
+.browseLink {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ArtisteMainContainer {
+  margin-top: 7%;
+  height: 40vh;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1280px) {
+  .ArtisteMainContainer {
+    margin-top: 25%;
+    margin-bottom: 7%;
+  }
+
+  .flowModalContainer {
+    padding-top: 7% 0% 10% 0%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .ArtisteMainContainer {
+    margin-top: 42%;
+    margin-bottom: 9%;
+  }
+
+  .browseDetailsLinkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .flowModalContainer {
+    padding: 25% 0% 10% 0%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .musicContainer {
+    height: 80vh;
+  }
+
+  .ArtisteMainContainer {
+    margin-top: 55%;
+    height: 60vh;
+  }
+  .browseDetailsLinkContainer {
+    width: 120%;
+    justify-content: flex-start;
+    padding: 0% 8%;
+    overflow-x: scroll;
+  }
+  .browseDetailsTitle {
+    font-size: 1.2rem;
+  }
+
+  .header {
+    font-size: 0.8rem;
+  }
+
+  .browseLink {
+    font-size: 0.7rem;
+  }
+
+  .Browseviewall {
+    width: 5%;
+    font-size: 0.7rem;
+  }
+
+  .flowModalContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .ArtisteMainContainer{
+    margin-top: 65%;
+  }
+}

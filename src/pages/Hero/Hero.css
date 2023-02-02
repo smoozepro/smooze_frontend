@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.hero {
+  background-image: url("../../assets/BGFirstScreen.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* place-items: center; */
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 45px;
+  line-height: 1.4;
+  margin-bottom: 5%;
+  color: #ffffff;
+  font: normal normal 400 48px/64px Lato;
+}
+
+.musicbox,
+.sub {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.musicbox {
+  /* padding: 0% 32%; */
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.musicbox button {
+  width: 250px;
+  border-radius: 35px;
+  padding: 10px 20px;
+  color: #ffffff;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.musicbox button:nth-child(1) {
+  background-image: linear-gradient(to right, #35eefbca, #2d9bef, #9b2def);
+  border: none;
+  outline: none;
+}
+
+.musicbox button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.sub p {
+  font-weight: 290;
+  margin-left: 30px;
+  width: 100%;
+  /* padding: 0% 40%; */
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    background-size: 100% 100%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .musicbox,
+  .sub {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+  }
+
+  .sub {
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 35%;
+  }
+
+  .sub p {
+    margin: 0%;
+    padding: 0%;
+  }
+}

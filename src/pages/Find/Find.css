@@ -1,0 +1,64 @@
+.find {
+  background-color: #161a1a;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 0% 2%;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+
+/* img{
+    height: 110vh;
+} */
+
+.find-text {
+  margin-left: 12%;
+}
+.musicfinder {
+  color: #2dceef;
+}
+.h2 {
+  padding-bottom: 20px;
+}
+.img {
+  height: 110vh;
+  width: 50vw;
+}
+
+.p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 780px) {
+  .find {
+    flex-direction: column-reverse;
+    margin-top: 35%;
+  }
+
+  .find img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .find {
+    margin-top: 0%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .find img {
+    width: 100%;
+  }
+
+  h2 {
+    padding: 0px;
+  }
+
+  .p {
+    font-size: 0.7rem;
+    padding-bottom: 5%;
+    line-height: 1.2rem;
+  }
+}

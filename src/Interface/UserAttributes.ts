@@ -1,0 +1,30 @@
+export interface UserAttributes {
+  id: string;
+  data: Object;
+  email?: string;
+  password?: string;
+  firstName?: string;
+  lastName?: string;
+  userName: string;
+  salt?: string;
+  address?: string;
+  otp?: string;
+  otp_expiry?: Date;
+  lng?: number;
+  lat?: number;
+  verified?: boolean;
+  role?: string;
+  profileImage?: string;
+  gender?: string;
+  date_birth?: Date;
+  googleId?: string;
+  facebookId?: string;
+  googleToken?: string;
+  faceBookToken?: string;
+  country?: string;
+  lan?: string;
+  currency?: string;
+  isAceptedPrivacy?: boolean;
+  isAceptedTerms?: boolean;
+  socials?: String[];
+}

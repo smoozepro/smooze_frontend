@@ -1,0 +1,30 @@
+.PlayingContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.Playingbar1,
+.Playingbar2,
+.Playingbar3,
+.Playingbar4 {
+  position: relative;
+  background-color: #35edfb;
+  padding: 1.5px;
+  margin: 0.8px auto;
+  height: 22px;
+}
+
+.PlayingBackground {
+  background-color: black;
+  opacity: 0.75;
+  position: relative;
+  top: 63px;
+  left: 58px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}

@@ -1,0 +1,9 @@
+.submit {
+  background: #2d9bef 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  border-style: none;
+  padding: 10px 70px;
+  font: normal normal bold 16px/19px Lato;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}

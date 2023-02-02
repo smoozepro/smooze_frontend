@@ -1,0 +1,33 @@
+.dashboardText {
+  color: #fff;
+  text-align: center;
+}
+
+.artists {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.artistTag {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.displayArtists {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.musicInfoDescription {
+  letter-spacing: 0.09px;
+  color: #99999f;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 0.65rem;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  top: -2rem;
+  left: 3rem;
+}

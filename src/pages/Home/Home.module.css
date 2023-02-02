@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+.home_container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  transition: all ease-in;
+  transition-duration: 1s;
+}
+
+.clossBody {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.signup_container,
+form,
+.social,
+.mb-3,
+.mb-4,
+.custom_control,
+.sign {
+  display: flex;
+}
+.sign_container,
+form {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.signup_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/signupbg.png");
+  justify-content: center;
+}
+.signup_container h3 {
+  margin: 0%;
+}
+form {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  align-items: center;
+}
+.social {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  /* width: 50%; */
+  margin: 2%;
+  padding: 4% 0%;
+  border-radius: 3px;
+  /* background-color: red; */
+  /* width: 100%; */
+}
+.social button,
+.check button,
+.sign button {
+  width: 45%;
+  height: 30px;
+  border-radius: 55px;
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.social button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0% 5%;
+  border: 1px solid #000;
+}
+.facebook {
+  display: flex;
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  /* padding: 5px; */
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  width: 180px;
+  height: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.facebook svg,
+.social-text2 svg {
+  font-size: 20px;
+}
+.google {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.social-text2 {
+  display: flex;
+
+  border: 1px solid;
+  color: #000;
+  background-color: #fff;
+  padding: 5px 0px;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border: 0.5px solid #121212;
+  border-radius: 20px;
+}
+.social-text1 {
+  color: #fff;
+}
+.social-text2 {
+  color: #000;
+}
+/* svg {
+  position: relative;
+  top: 3px;
+  margin-right: 8px;
+} */
+/* .facebook svg {
+  position: relative;
+  font-size: 20px;
+} */
+.mb-3 {
+  width: 80%;
+  margin: 0px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 60%;
+  height: 4vh;
+  border: 1.5px solid#2D9BEF;
+  border-radius: 5px !important;
+  background-color: #f8fcff;
+  padding-left: 4%;
+  font-size: 16px;
+}
+/* ::placeholder {
+  color: #000;
+} */
+.mb-4 {
+  width: 60%;
+  justify-content: space-between;
+}
+.custom-control {
+  position: absolute;
+  left: 510px;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-between;
+  /* width:35%; */
+  /* top: 490px; */
+}
+.custom-control-input {
+  height: 20px;
+  width: 20px;
+  background-color: #2d9bef;
+  position: relative;
+  top: 17px;
+}
+.custom-control-label {
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+}
+.check {
+  width: 15%;
+  padding-bottom: 5%;
+  position: absolute;
+  right: 508px;
+}
+.check-1 {
+  width: 50%;
+  padding-bottom: 5%;
+}
+.check-1 button {
+  width: 100%;
+  border: none;
+  background-color: #2d9bef;
+  color: #fff;
+  padding: 0;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.check button {
+  width: 100%;
+  border: none;
+  background-color: #2d9bef;
+  color: #fff;
+  padding: 0;
+}
+.forgot-password a {
+  color: #2d9bef;
+  position: relative;
+  top: 50px;
+}
+.account {
+  margin: 70px 0px 0px 0px;
+}
+.sign {
+  width: 100%;
+  margin: 0% auto;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.sign button {
+  width: 60%;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+.check p {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  list-style: 0.07px;
+  padding: 0px;
+  text-align: center;
+}
+.account {
+  padding: 0px;
+}
+.account p {
+  font-size: 12px;
+}
+span {
+  color: #2d9bef;
+}
+.btn-styl {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.mb-4-tm {
+  font-size: 12px;
+  text-align: center;
+  width: 40%;
+}
+.gender {
+  padding: 0 2rem;
+}
+.dropdowns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 11%;
+  /* border: 1px solid #2D9BEF; */
+}
+.dob {
+  margin: 0%;
+  width: 43%;
+  background-color: #fff;
+  border-color: #000;
+}
+.gender {
+  border: 1px solid #2d9bef;
+  width: 43%;
+  font-size: 16px;
+  height: 3.5vh;
+  border-radius: 5px;
+  border-color: #000;
+}
+.form-control {
+  height: 45px;
+  width: 426px;
+}
+
+@media screen and (max-screen) {
+  .signup_container {
+    background-color: #2d9bef;
+  }
+}

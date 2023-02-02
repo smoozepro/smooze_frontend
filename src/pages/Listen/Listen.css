@@ -1,0 +1,46 @@
+.Listen {
+  background-image: url("../../assets/Listen_anytime.png");
+  background-size: 100% 100%;
+  height: 60vh;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+.Listen_anytime {
+  padding-top: 12%;
+  padding-left: 13%;
+}
+
+h2 {
+  margin-top: 1%;
+  font-weight: 900;
+  font-size: 27px;
+}
+
+p {
+  font-size: 15.5px;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 780px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .Listen p {
+    font-size: 0.8rem;
+    visibility:hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Listen {
+    display: grid;
+    place-items: center;
+  }
+
+  .Listen_anytime {
+    padding: 0%;
+  }
+}

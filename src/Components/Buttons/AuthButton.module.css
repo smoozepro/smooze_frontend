@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+.authbuttontrans {
+  border: 1.5px solid #ffffff;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 3px 20px;
+  font: normal normal bold 12px/25px Lato;
+  margin-right: 15px;
+  cursor: pointer;
+  width: 80px;
+  transform: all 0.5s ease;
+}
+.authbuttontrans:hover {
+  border: 1.5px solid #0a010170;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  padding: 3px 20px;
+  font: normal normal bold 12px/25px Lato;
+  margin-right: 15px;
+  width: 87px;
+  cursor: pointer;
+  transform: all 0.5s ease;
+}
+
+.authbuttoncolored {
+  border: 1.5px solid #ffffff;
+  border-radius: 15px;
+  color: #363233;
+  padding: 3px 20px;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  font: normal normal bold 12px/25px Lato;
+  border: 1px solid #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+  width: auto;
+}
+
+.authbuttoncolored:hover {
+  border: 1.5px solid #ffffff;
+  border-radius: 15px;
+  color: white;
+  padding: 3px 20px;
+  background: transparent 0% 0% no-repeat padding-box;
+  font: normal normal bold 12px/25px Lato;
+  border: 1px solid #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+  width: 85px;
+}
+
+@media screen and (max-width: 600px) {
+  .authbuttoncolored,
+  .authbuttontrans {
+    font: normal normal bold 8px/15px Lato;
+  }
+}

@@ -1,0 +1,248 @@
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  --visible-cols: 3;
+  --col-gap: 20px;
+  --col-hint: 0px;
+  --col-size: calc(
+    (100% / var(--visible-cols)) - var(--col-gap) - var(--col-hint)
+  );
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-columns: var(--col-size);
+  grid-auto-columns: var(--col-size);
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.title {
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.gridItem {
+  padding: 50px 40px;
+  border-radius: 8px;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px); */
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 50% 50%;
+  background-size: 100% 100%;
+  /* background-color: 0 0 0 rgba(0, 0, 0, 0.6); */
+}
+.bggradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-image: conic-gradient(
+    rgba(123, 128, 137, 0.5),
+    rgba(123, 128, 137, 0.5),
+    rgba(123, 128, 137, 0.5),
+    rgba(169, 181, 198, 0.5),
+    rgba(169, 181, 198, 0.5),
+    rgba(169, 181, 198, 0.5)
+  );
+}
+.lgimgdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.lgimg {
+  width: 100%;
+  height: 100%;
+  filter: blur(1px);
+  /* background-image: linear-gradient(rgba(106, 34, 34, 0.5), rgba(140, 25, 25, 0.5)); */
+}
+.imgcontainer {
+  border-radius: 8px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.smallimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.flowcardright {
+  display: inline-block;
+  text-align: center;
+}
+
+.flowcardright p {
+  font-size: 10px;
+  color: white;
+  letter-spacing: 0.08px;
+  position: relative;
+  z-index: 1;
+}
+.flowcardright h3 {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.721);
+  letter-spacing: 0.08px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.btmalign {
+  margin-top: 50%;
+  font-size: 10px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  /* color: #d5d5d5 !important; */
+  color: #ffff !important;
+  width: 40%;
+}
+
+.hangingicon {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* opacity: 0.3; */
+  margin: auto;
+  bottom: -15%;
+  left: 35%;
+  cursor: pointer;
+}
+.hangingicon:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.hangingicon svg {
+  color: white;
+  font-size: 30px;
+}
+
+.goPremuim {
+  width: 119px;
+  height: 36px;
+  border-radius: 8px;
+  /* margin: 0 auto; */
+  /* UI Properties */
+  padding: 10px;
+  background: transparent
+    linear-gradient(
+      273deg,
+      var(--unnamed-color-9b2def) 0%,
+      var(--unnamed-color-2d9bef) 58%,
+      #35edfb 100%
+    )
+    0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(273deg, #9b2def 0%, #2d9bef 58%, #35edfb 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.FlowModalContent {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 200px;
+  width: 70%;
+  overflow-y: auto;
+  /* top: 20%; */
+}
+.FlowCloseIcon {
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  top: 5%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.tbrow {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(16, 2, 2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  border-radius: "5px";
+  box-shadow: "0px 0px 5px 0px rgba(0,0,0,0.3)";
+}
+.tbrow:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.title {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+.img {
+  width: 20px;
+  height: 20px;
+}
+.tdata {
+  width: 100%;
+  /* justify-content: left; */
+}
+
+.tableHead {
+  background-color: rgb(16, 2, 2);
+  position: sticky;
+  top: 0;
+  /* padding: 10px; */
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.THeadtext {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+.trackText {
+  font-size: 20px;
+  font-weight: bold;
+  color: orangered;
+  margin-left: 10px;
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 1280px) {
+  .parent {
+    overflow-x: scroll;
+  }
+
+  .flowcardright h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main {
+    width: 150%;
+  }
+  .gridItem {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    width: 300%;
+  }
+  .gridItem {
+    width: 100%;
+  }
+}

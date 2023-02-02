@@ -1,0 +1,9 @@
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  border: 1px solid #2d9bef;
+  background: #f8fcff 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 15px 200px 15px 10px;
+}

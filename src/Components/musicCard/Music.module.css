@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  font-family: 'Lato', sans-serif;
+}
+
+.musicContainer {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 5%;
+  width: auto;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: space-evenly;
+  margin-right: 3%;
+}
+.musicImg {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.musicImg:hover {
+  transform: scale(1.02);
+}
+.musicImg img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.musicInfoDescription {
+  letter-spacing: 0.09px;
+  color: #99999f;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 0.65rem;
+  transition: all 0.5s ease-in-out;
+}
+.musicInfoDescription:hover {
+  color: rgb(210, 208, 208);
+  cursor: pointer;
+}
+.musicInfoHeader {
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+.iconLike {
+  color: #99999f;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 0.7rem;
+  transition: all 0.5s ease-in-out;
+}
+.iconLike:hover {
+  color: rgb(210, 208, 208);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.iconAndDesc {
+  display: flex;
+
+  align-items: center;
+  margin-top: 0.2rem;
+  column-gap: 0.4rem;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1280px) {
+  .musicContainer {
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+  }
+
+  .music {
+    margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .musicImg img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .musicContainer {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
+    margin-top: 5%;
+    height: auto;
+  }
+}

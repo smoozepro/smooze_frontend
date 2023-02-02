@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: auto;
+}
+.text{
+    width:100%;
+    margin-left: 6%;
+    margin-top: 5%;
+    font-size: 2rem;
+    height: 10vh;
+}
+
+.pictures{
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 780px) {
+    .text{
+        font-size: 1.5rem;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+}
+ 
+    
+

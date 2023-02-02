@@ -1,0 +1,184 @@
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 7rem;
+  }
+
+  .smallimg{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 50px;
+  }
+  .container Link{
+    border: 1px red ;
+  }
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th,
+  .table td{
+    text-align: left;
+    padding: 8px;
+    font-size: 15px;
+  }
+  
+  .table th {
+    background-color: purple
+  }
+  
+  
+  form {
+    display: flex;
+    gap: 5px;
+  }
+  .mainContainer{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    width: 100%;
+  }
+  button, select{
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    cursor: pointer;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  form * {
+    font-size: 15px;
+  }
+
+  input{
+    padding: 1rem;
+    width: 40%;
+  
+  }
+
+  .mainContainer > input, .mainContainer > button, .mainContainer>select{
+    height: auto;
+    width: auto;
+    padding: 0;
+    padding: 0px 0 3px 3px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: purple;
+  }
+  .mainContainer > button{
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: purple;
+  }
+
+  .mainContainer ::placeholder{
+    color: purple;
+  }
+
+ 
+  .mainContainer > button:hover{
+    background-color: purple;
+    color: white;
+  }
+
+  .label{
+    cursor:pointer;
+    background-color:white;
+    border-radius:5px;
+    color: purple;
+    padding: 5px 3px;
+  }
+  .label > span{
+    color: purple;
+  }
+  .label> input{
+    display: none;
+  }
+
+  .pagination {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .pagination span {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination span.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination span:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 780px) {
+    .mainContainer{
+      flex-direction: column;
+    }
+    .link{
+      font-size: 10px;
+    }
+
+    .tableContainer{
+      padding: 4% 8%;
+    }
+
+    form{
+      width:100%;
+    }
+
+    .mainContainer{
+      overflow-x: scroll;
+      width: 100%;
+    }
+
+    input{
+      width: 100%;
+      padding: 0% 0%;
+    }
+
+    .mainContainer > input{
+      width: 100%;
+    }
+
+    .tableDiv{
+      overflow: scroll;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .tableContainer{
+      padding: 0% 4%;
+    }
+
+    .tableDiv{
+      overflow: auto;
+      margin: 0% 0% 45% 0%;
+    }
+
+   
+  }

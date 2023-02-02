@@ -1,0 +1,66 @@
+:root {
+  --max-width: 1120px;
+  --fixed-width: 500px;
+  --fluid-width: 90vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.gridContainer {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5% 1%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.browseImg {
+  /* top: 198px;
+  left: 220px;
+  width: 180px;
+  height: 100px; */
+  width: 280px;
+  height: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.browseMusicCategory {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+ 
+}
+
+@media only screen and (max-width: 1280px) {
+  .gridContainer {
+    overflow-x: scroll;
+    gap: 5% 5%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+.gridContainer {
+    overflow-x: scroll;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  .browseImg{
+    width: 180px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 400px) {
+}

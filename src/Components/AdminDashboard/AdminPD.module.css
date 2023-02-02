@@ -1,0 +1,11 @@
+ form {
+     width: 100%;
+ }
+
+ .mainContainer{
+    width: 100%;
+    display: flex;
+    gap:2rem;
+    justify-content: space-between;
+    align-items: center;
+ }

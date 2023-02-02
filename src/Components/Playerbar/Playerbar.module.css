@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.playbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+  background-size: cover;
+  /* background-color: #3a3a3d; */
+  padding: 1% 0%;
+  height: auto;
+  width: 95%;
+  border-radius: 5px;
+  /* top: 100vh; */
+  bottom: 0px;
+}
+
+.playbarleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.playbarleftsonginfo {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 60%;
+  margin-left: 15px;
+}
+
+.playbarleftsonginfo img {
+  height: 5vh;
+}
+
+.artistInfo {
+  padding-left: 12%;
+  overflow-x: scroll;
+}
+
+.playbarLeftButton {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.playbarLeftButton span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+}
+
+.playbarLeftButton span:nth-child(2) {
+  color: #2dceef;
+  font-size: 20px;
+}
+
+.playbarleftcontrol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.controlButton {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  font-size: 25px;
+  color: white;
+}
+
+.playbarRightButton img {
+  height: 2vh;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-top: 1%;
+}
+
+.progress p {
+  color: white;
+}
+
+.playbarRightButton {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+.songDiv {
+  width: 100%;
+}
+
+.songDiv h4,
+.songDiv p {
+  animation: marquee 5s linear infinite;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.img {
+  max-width: 100px;
+  margin: 0 auto;
+  align-self: center;
+}
+.title {
+  max-width: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  max-height: 20px;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 1280px) {
+  .playbar {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .progress {
+    width: 100%;
+  }
+
+  .playbarRightButton {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .playbar {
+    flex-direction: column;
+    height: auto;
+    padding: 3% 5%;
+    height: 25vh;
+    overflow-x: hidden;
+  }
+
+  .playbarleft {
+    width: 100%;
+  }
+
+  .playbarleftsonginfo {
+    justify-content: space-between;
+  }
+
+  .playbarRightButton {
+    width: 80%;
+  }
+  .artistInfo {
+    text-align: center;
+  }
+
+  .playbarleftcontrol {
+    width: 100%;
+  }
+
+  .progress {
+    display: flex;
+  }
+}
