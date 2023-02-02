@@ -6,7 +6,7 @@ import Pause from '@mui/icons-material/Pause'
 import AddIcon from '@mui/icons-material/Add';
 
 import img1 from '../../assets/flowsection/albumimg.webp';
-import img from '../../assets/flowsection/Flowcover2.png';
+import img2 from '../../assets/flowsection/Flowcover2.png';
 import img3 from '../../assets/flowsection/Flowcover3.png';
 import { FlowContext } from '../../useContext/flowContext';
 import { AllPlayerContext, FlowInterface } from '../../useContext/interface';
