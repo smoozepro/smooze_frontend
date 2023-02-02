@@ -6,6 +6,8 @@ import Pause from '@mui/icons-material/Pause'
 import AddIcon from '@mui/icons-material/Add';
 
 import img1 from '../../assets/flowsection/albumimg.webp';
+import img from '../../assets/flowsection/Flowcover2.png';
+import img3 from '../../assets/flowsection/Flowcover3.png';
 import { FlowContext } from '../../useContext/flowContext';
 import { AllPlayerContext, FlowInterface } from '../../useContext/interface';
 import Modal from 'react-modal';
@@ -28,13 +30,13 @@ const mockData = [
     bottomtext:
       'Select multiple genres and moods to create the perfect soundtrack',
     para: 'Create your own perfect soundtrack',
-    img: '../../assets/flowsection/Flowcover2.png',
+    img: img2,
     children: <AddIcon />
   },
   {
     bottomtext: 'Select multiple artists to create the perfect sountrack',
     para: 'Create your own concert with your favorite singers',
-    img: '../../assets/flowsection/Flowcover3.png',
+    img: img3,
     children: <AddIcon />
   }
 ];
