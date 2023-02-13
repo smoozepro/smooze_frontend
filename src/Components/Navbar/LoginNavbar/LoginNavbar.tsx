@@ -168,8 +168,10 @@ const LoginNav: FC<LayoutProps> = ({ openModal, openLoginModal }) => {
             }}>
             About
           </Link>
-          <Link to='/' style={{ color: "#fff", textAlign: "center" }}  onClick={() => {
+          <Link to='/' style={{ color: "#fff", textAlign: "center" }}  onClick={(e) => {
+              e.preventDefault();
             setShowDiv(!showDiv);
+              logout();
           }}>
             Logout
           </Link>
